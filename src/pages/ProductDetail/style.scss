@@ -1,0 +1,55 @@
+.product {
+  &__wrapper {
+    width: 70%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: (1.5fr 2fr);
+    grid-gap: 3rem;
+    position: relative;
+    @include tablet {
+      width:90%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__image {
+    margin: auto;
+    img {
+      height: 40rem;
+    }
+  }
+  &__info {
+    padding: 5rem;
+    h1 {
+      color: $primary;
+      font-size: 2.5rem;
+      font-weight: $font-weight-md;
+      text-align: left;
+    }
+    &__price {
+      font-size: 2.2rem;
+      padding: 2rem 0;
+      color: $secondary;
+      font-weight: $font-weight-sm;
+    }
+    &__description {
+      font-size: 1.6rem;
+      color: $black;
+      padding: 2rem 0;
+      line-height: 2.5rem;
+    }
+    @include mobile {
+      padding: 2rem;
+    }  
+  }
+  &__counter{
+    width: 100%;
+    display: flex;
+    }  
+  &__fav{
+    color:$primary;
+    font-size:2rem;  
+    left: 1%;
+    top:1%;  
+    position: absolute;
+    }  
+}
