@@ -1,0 +1,7 @@
+const basketTypes = {
+  ADD_TO_BASKET: 'ADD_TO_BASKET',
+  REMOVE_FROM_BASKET: 'REMOVE_BASKET',
+  REMOVE_PRODUCT: 'REMOVE_PRODUCT',
+  DELETE_BASKET: 'DELETE_BASKET',
+};
+export default basketTypes;
