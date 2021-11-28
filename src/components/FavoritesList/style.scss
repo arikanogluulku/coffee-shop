@@ -1,0 +1,27 @@
+.favorites {
+  &__container {
+    width: 90%;
+    margin: 6rem auto;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__remove {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 3rem;
+    color: $busy-color;
+    font-weight: $font-weight-md;
+  }
+}

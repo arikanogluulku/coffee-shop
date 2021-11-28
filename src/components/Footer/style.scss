@@ -1,0 +1,65 @@
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $light;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: space-around;
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  &__social {
+    display: wrap;
+    padding: 2rem;
+    text-align: center;
+    i {
+      height: 6rem;
+      padding: 2rem;
+      font-size: 3rem;
+      color: $busy-color;
+      text-align: center;
+      margin-right: 1rem;
+      &:hover {
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      color: $busy-color;
+      font-size: 1.6rem;
+      margin: 0.5rem;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    &__item {
+      color: $busy-color;
+      font-size: 1.6rem;
+      margin: 0.5rem;
+      i {
+        color: $busy-color;
+        font-size: 3rem;
+        margin: 0.5rem;
+      }
+    }
+  }
+  &__info {
+    margin: auto;
+    font-size: 1.4rem;
+    color: $busy-color;
+    span {
+      color: $busy-color;
+      font-weight: $font-weight-md;
+    }
+  }
+}

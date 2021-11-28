@@ -1,0 +1,41 @@
+.navbar {
+  background: $light;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 8rem;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 6rem;
+      width: auto;
+    }
+    p {
+      font-size: 1.8rem;
+      margin: 0 1rem;
+      color: $busy-color;
+      font-weight: $font-weight-lg;
+    }
+  }
+  &__icons {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-color {
+      color: $busy-color;
+      font-size: 2.5rem;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.info{
+    height: 50vh;
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__image{
+        height: 15rem;
+        width: auto;
+        margin:3rem 0;
+        }    
+    &__text{
+        font-size:2rem;
+        line-height:3rem;
+        text-align: center;
+        color:$busy-color;    
+        text-decoration: none;
+        margin-bottom: 3rem;
+        }
+}

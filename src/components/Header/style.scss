@@ -1,0 +1,25 @@
+.header {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background: url("https://www.wallpapertip.com/wmimgs/5-50776_background-for-coffee-shop-hd-wallpaper-backgrounds-its.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__content {
+    max-width: 60rem;
+    padding: 2rem;
+    h1 {
+      color:  $light;
+      font-size: 6rem;
+      margin-left: 1.5rem;margin-left: 1.5rem;
+      text-shadow: 5px 5px $busy-color;
+      text-transform: uppercase;
+    }
+    p{
+    color: $light;   
+    font-size: 3rem;
+    margin:1rem 1.5rem;
+    }
+  }
+}

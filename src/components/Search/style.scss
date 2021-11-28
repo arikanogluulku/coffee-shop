@@ -1,0 +1,80 @@
+.search {
+  &__icon {
+    cursor: pointer;
+    i {
+      color: $black;
+      font-size: 2.5rem;
+      margin-right: 1.5rem;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  &__form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: $primary;
+    width: 40rem;
+    height: 5rem;
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    &-active {
+      transform: scaleY(1);
+    }
+    input {
+      height: 100%;
+      width: 100%;
+      font-size: 1.5rem;
+      border: 1px solid $primary;
+      color: $primary;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-transform: none;
+    }
+    label {
+      text-align: center;
+      cursor: pointer;
+      font-size: 2.2rem;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      color: black;
+      text-transform: none;
+    }
+  }
+  &__result {
+    position: absolute;
+    width: 35rem;
+    top: 118%;
+    right: 13%;
+    overflow-y: auto;
+    max-height: 40rem;
+    flex-direction: column;
+    &__item {
+      height: 10rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      border-radius: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color:$light;
+      text-decoration: none;
+      img {
+        grid-column: 1;
+        position: relative;
+        height: inherit;
+        margin: auto;
+      }
+      p {
+        grid-column: 2;
+        margin: auto;
+        color: $primary;
+        font-size: 1.6rem;
+        font-weight: $font-weight-md;
+        text-decoration: none;
+      }
+    }
+  }
+}
