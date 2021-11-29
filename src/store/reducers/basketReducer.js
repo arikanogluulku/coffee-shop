@@ -28,12 +28,13 @@ export default function basketReducer(state = initialState, { type, payload }) {
         return {
           ...state,
           basket: state.basket.filter((p) => p.productID !== exist1.productID),
-          totalPrice: state.totalPrice - exist1.price,
+          totalPrice: state.totalPrice - product.price,
         };
       }
       return {
         ...state,
         basket: state.basket.map((p) => (p.productID === exist1.productID ? { ...p, qty: p.qty - 1 } : p)),
+        totalPrice: state.totalPrice - product.price,
       };
     case basketTypes.REMOVE_PRODUCT:
       return {
